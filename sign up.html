@@ -1,0 +1,136 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Signup
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+    background: linear-gradient(135deg, #2efef7 0%, #4a6dfb 100%);
+   }
+   .container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+   }
+   .logo {
+    margin-bottom: 0.5rem;
+    width: 80px;
+    height: 80px;
+   }
+   h2 {
+    font-weight: 600;
+    color: black;
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
+   }
+   p.welcome {
+    color: black;
+    margin-bottom: 1rem;
+   }
+   form {
+    width: 91.666667%;
+    max-width: 20rem;
+   }
+   label {
+    display: block;
+    color: black;
+    margin-bottom: 0.25rem;
+   }
+   label.email {
+    font-size: 0.875rem;
+   }
+   label.password {
+    font-size: 0.75rem;
+   }
+   input[type="email"],
+   input[type="password"] {
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid black;
+    color: black;
+    margin-bottom: 0.75rem;
+    box-sizing: border-box;
+   }
+   .relative {
+    position: relative;
+   }
+   .eye-icon {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    cursor: pointer;
+   }
+   button {
+    width: 100%;
+    background-color: #4bb8f5;
+    font-weight: 800;
+    color: black;
+    font-size: 1.125rem;
+    padding: 0.5rem 0;
+    border: none;
+    cursor: pointer;
+   }
+   p.login-text {
+    margin-top: 0.75rem;
+    color: black;
+    font-size: 0.875rem;
+   }
+   p.login-text span {
+    font-weight: 700;
+    font-style: italic;
+    cursor: pointer;
+   }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <img alt="Grinders logo with a yellow bird holding a grinder tool in its beak inside a black and white circular border" class="logo" height="80" src="https://storage.googleapis.com/a1aa/image/ebeda8d4-99bb-4e9b-a473-0605d82c431b.jpg" width="80"/>
+   <h2>
+    Sign up
+   </h2>
+   <p class="welcome">
+    Welcome,Grinders
+   </p>
+   <form>
+    <label class="email" for="email">
+     Email
+    </label>
+    <input id="email" type="email"/>
+    <label class="password" for="password">
+     Create password
+    </label>
+    <div class="relative">
+     <input id="password" type="password"/>
+     <i aria-hidden="true" class="fas fa-eye-slash eye-icon"></i>
+    </div>
+    <label class="password" for="confirm-password">
+     Confirm password
+    </label>
+    <div class="relative" style="margin-bottom:1.5rem;">
+     <input id="confirm-password" type="password"/>
+     <i aria-hidden="true" class="fas fa-eye-slash eye-icon"></i>
+    </div>
+   <button type="button" onclick="window.location.href='log in.html'">Signup</button>
+
+    </button>
+   </form>
+   <p class="login-text">
+    Already have an account?
+    <span>
+     login
+    </span>
+   </p>
+  </div>
+ </body>
+</html>

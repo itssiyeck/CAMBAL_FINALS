@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Employee Application</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- FontAwesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Optional JavaScript Redirect -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector("form");
+      const submitBtn = document.querySelector(".btn-submit");
+
+      submitBtn.addEventListener("click", function (e) {
+        e.preventDefault(); // Prevent default form submission
+        window.location.href = "cambal.html"; // Redirect
+      });
+    });
+  </script>
+</head>
+<body class="min-h-screen flex flex-col justify-between bg-gradient-to-br from-cyan-400 to-blue-400 font-inter">
+  <div class="flex flex-col items-center pt-8 px-6">
+    <img
+      alt="Grindfest logo"
+      class="w-20 h-20"
+      height="80"
+      src="https://storage.googleapis.com/a1aa/image/584af687-1d5a-4c07-647a-583fe2bb7a37.jpg"
+      width="80"
+    />
+    <h1 class="font-bold text-black mt-3 text-base">Employee Application</h1>
+
+    <!-- ✅ Updated form with action and method -->
+    <form action="message.html" method="get" class="w-full max-w-xs mt-6 text-black text-sm">
+      <div class="flex justify-between mb-3">
+        <label class="self-center" for="firstName">First Name</label>
+        <label class="self-center" for="lastName">Last Name</label>
+      </div>
+      <div class="flex justify-between mb-4">
+        <input class="form-input w-[45%]" id="firstName" name="firstName" type="text" />
+        <input class="form-input w-[45%]" id="lastName" name="lastName" type="text" />
+      </div>
+
+      <div class="mb-3 flex items-center">
+        <label class="w-20" for="fullName">Full name</label>
+        <input class="form-input flex-1" id="fullName" name="fullName" type="text" />
+      </div>
+
+      <div class="mb-3 flex items-center">
+        <label class="w-20" for="email">E-mail</label>
+        <input
+          class="form-input flex-1"
+          id="email"
+          name="email"
+          type="email"
+          placeholder="ex yecksi123@gmail.com"
+        />
+      </div>
+
+      <div class="mb-3 flex items-center">
+        <label class="w-20" for="phone">Phone Num.</label>
+        <input class="form-input flex-1" id="phone" name="phone" type="tel" />
+      </div>
+
+      <div class="mb-6 flex items-center">
+        <label class="w-20" for="address">Address</label>
+        <input class="form-input flex-1" id="address" name="address" type="text" />
+      </div>
+
+      <div class="flex items-center space-x-3 mb-6">
+        <i class="fas fa-upload text-black text-xl"></i>
+        <button class="btn-upload text-sm font-semibold text-blue-900 underline" type="button">Upload Resume</button>
+      </div>
+
+      <!-- ✅ Submit button -->
+      <button class="btn-submit w-full bg-black text-white font-bold py-2 rounded hover:bg-gray-800 transition" type="submit">
+        Submit
+      </button>
+    </form>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <nav class="flex justify-around bg-white py-3 mt-6">
+    <button aria-label="Home" class="focus:outline-none"><i class="fas fa-home text-xl"></i></button>
+    <button aria-label="Mail" class="focus:outline-none"><i class="fas fa-envelope text-xl"></i></button>
+    <button aria-label="Search" class="focus:outline-none"><i class="fas fa-search text-xl"></i></button>
+    <button aria-label="Notifications" class="focus:outline-none"><i class="fas fa-bell text-xl"></i></button>
+    <button aria-label="Profile" class="focus:outline-none"><i class="fas fa-user-circle text-xl"></i></button>
+  </nav>
+</body>
+</html>
