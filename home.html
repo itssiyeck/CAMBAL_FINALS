@@ -1,61 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>Grinders</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet"
+  />
 </head>
-<body>
-  <div class="container">
-    <!-- Header -->
-    <h1 class="logo">Grinders.</h1>
-    <div class="search-box">
-      <input type="text" placeholder="Search services..." />
+<body class="bg-gradient-to-br from-cyan-400 to-blue-400 min-h-screen p-4 font-sans text-black">
+  <div class="max-w-xs mx-auto">
+    <p class="mb-2">Grinders.</p>
+    <div class="relative mb-4">
+      <input
+        class="w-full h-9 pl-2 pr-9 border border-black rounded-sm text-black text-sm"
+        placeholder=""
+        type="text"
+      />
+      <button
+        aria-label="Search"
+        class="absolute right-2 top-1/2 -translate-y-1/2 text-black text-sm"
+      >
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+    <div class="flex justify-between mb-2 text-sm font-semibold">
+      <span>Popular Services</span>
+      <span>See all</span>
+    </div>
+    <div class="grid grid-cols-2 gap-x-6 gap-y-4 mb-4">
+      <div class="flex flex-col items-center text-xs">
+        <img
+          alt="Orange icon representing a pen nib inside a light bulb for Logo Design"
+          class="mb-1"
+          height="60"
+          src="https://storage.googleapis.com/a1aa/image/0cf3f515-e2a5-49b6-d795-a17a82a65365.jpg"
+          width="60"
+        />
+        <span>Logo Design</span>
+      </div>
+      <div class="flex flex-col items-center text-xs">
+        <img
+          alt="tae"
+          class="mb-1"
+          height="60"
+          src="https://storage.googleapis.com/a1aa/image/e18a1233-36cc-43d3-3d47-02aab71f40ab.jpg"
+          width="60"
+        />
+        <span>AI Artist</span>
+      </div>
+      <div class="flex flex-col items-center text-xs">
+        <img
+          alt="tae"
+          class="mb-1"
+          height="60"
+          src="https://storage.googleapis.com/a1aa/image/980da56b-4587-4ddd-3e03-6e6886143cd2.jpg"
+          width="60"
+        />
+        <span>Web Traffic</span>
+      </div>
+      <div class="flex flex-col items-center text-xs">
+        <img
+          alt="tae"
+          class="mb-1"
+          height="60"
+          src="https://storage.googleapis.com/a1aa/image/0e7e5884-10a0-4838-1254-2fb799349cac.jpg"
+          width="60"
+        />
+        <span>Voice over</span>
+      </div>
+    </div>
+    <div
+      class="border border-black rounded-sm bg-cyan-300 p-6 text-center text-xs search-box"
+    >
       <i class="fas fa-search search-icon"></i>
-    </div>
-
-    <!-- Section Header -->
-    <div class="section-header">
-      <p>Popular Services</p>
-      <a href="#">See all</a>
-    </div>
-
-    <!-- Services -->
-    <div class="services-grid">
-      <!-- Logo Design -->
-      <div class="service-item">
-        <a href="application.html">
-          <img src="image/Capture3.PNG" alt="Logo Design" />
-        </a>
-        <p>Logo Design</p>
-      </div>
-
-      <!-- AI Artist -->
-      <div class="service-item">
-        <img src="image/Capture5.PNG" alt="AI Artist" />
-        <p>AI Artist</p>
-      </div>
-
-      <!-- Web Traffic -->
-      <div class="service-item">
-        <img src="image/Capture6.PNG" alt="Web Traffic" />
-        <p>Web Traffic</p>
-      </div>
-
-      <!-- Voice Over -->
-      <div class="service-item">
-        <img src="image/Capture8.PNG" alt="Voice Over" />
-        <p>Voice over</p>
-      </div>
-    </div>
-
-    <!-- Promo Box -->
-    <div class="promo-box">
-      <div class="promo-icon">TQ</div>
       <p>Explore beautiful work, picked for you.</p>
     </div>
+    <nav
+      class="fixed bottom-2 left-1/2 -translate-x-1/2 w-[280px] bg-white border border-black rounded-md flex justify-between items-center px-6 py-2 text-black text-sm"
+    >
+      <button aria-label="Home" class="focus:outline-none">
+        <i class="fas fa-home"></i>
+      </button>
+      <button aria-label="Messages" class="focus:outline-none">
+        <a href="message.html"><i class="fas fa-envelope"></i>
+    </a>
+      </button>
+      <button aria-label="Search" class="focus:outline-none">
+        <i class="fas fa-search"></i>
+      </button>
+      <button aria-label="Notifications" class="focus:outline-none">
+        <i class="fas fa-bell"></i>
+      </button>
+      <button aria-label="Profile" class="focus:outline-none">
+        <i class="fas fa-user"></i>
+      </button>
+    </nav>
   </div>
 </body>
 </html>

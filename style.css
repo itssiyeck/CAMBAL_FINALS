@@ -1,0 +1,264 @@
+/* Custom styles to match the homepage design */
+
+/* Form input styling to match homepage */
+.form-input {
+  @apply h-8 px-2 border border-black rounded-sm bg-white text-black text-sm;
+}
+
+/* Button styling to match homepage */
+.btn-upload, .btn-submit {
+  @apply bg-cyan-300 border border-black rounded-md px-4 py-2 text-black text-sm font-semibold;
+  transition: background-color 0.2s ease;
+}
+
+.btn-upload:hover, .btn-submit:hover {
+  @apply bg-cyan-200;
+}
+
+.btn-submit {
+  @apply px-8 py-3 font-bold;
+}
+
+/* Search box styling from homepage */
+.search-box {
+  position: relative;
+}
+
+.search-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+/* Navigation styling to match homepage */
+nav {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav button {
+  padding: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+nav button:hover {
+  color: #0891b2;
+}
+
+/* Ensure consistent spacing and layout */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Form label alignment */
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+/* Input focus states */
+input:focus {
+  outline: 2px solid #0891b2;
+  outline-offset: 2px;
+}
+
+/* Button focus states */
+button:focus {
+  outline: 2px solid #0891b2;
+  outline-offset: 2px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 480px) {
+  .max-w-xs {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  
+  nav {
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
+  }
+}
+
+/* Additional styling for better visual consistency */
+.gradient-bg {
+  background: linear-gradient(135deg, #22d3ee 0%, #3b82f6 100%);
+}
+
+/* Form container styling */
+form {
+  background: transparent;
+}
+
+/* Logo styling */
+img[alt*="logo"] {
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+h1 {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Upload section styling */
+.upload-section {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+/* Submit button container */
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+
+
+/* Messages page specific styles */
+.messages-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.messages-header h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menu-button:hover {
+  color: #0891b2;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  flex: 1;
+}
+
+.mail-icon-container {
+  width: 8rem;
+  height: 6rem;
+  background-color: #000;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.mail-icon {
+  color: #22d3ee;
+  font-size: 2.5rem;
+}
+
+.no-messages-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.no-messages-description {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #000;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.explore-button {
+  background-color: #67e8f9;
+  border: 1px solid #000;
+  border-radius: 0.375rem;
+  padding: 0.75rem 1.5rem;
+  color: #000;
+  font-size: 0.875rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.explore-button:hover {
+  background-color: #a5f3fc;
+}
+
+/* Active state for messages navigation */
+.nav-messages-active {
+  color: #0891b2 !important;
+}
+
+/* Responsive adjustments for messages page */
+@media screen and (max-width: 480px) {
+  .messages-header {
+    padding: 0 0.5rem;
+  }
+  
+  .empty-state {
+    margin-top: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .mail-icon-container {
+    width: 7rem;
+    height: 5rem;
+  }
+  
+  .mail-icon {
+    font-size: 2rem;
+  }
+  
+  .no-messages-description {
+    font-size: 0.8rem;
+  }
+}
+
+/* Additional styling for better visual hierarchy */
+.messages-page-title {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus states for accessibility */
+.menu-button:focus,
+.explore-button:focus {
+  outline: 2px solid #0891b2;
+  outline-offset: 2px;
+}
+
+/* Hover effects */
+.menu-button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+.explore-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <title>Message Page</title>
+  <title>Messages</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -14,52 +15,52 @@
   />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <div class="container">
-    <header class="header">
-      <h1 class="title">Message</h1>
-      <button aria-label="Menu" class="menu-button">
-        <i class="fas fa-bars"></i>
+<body class="bg-gradient-to-br from-cyan-400 to-blue-400 min-h-screen p-4 font-sans text-black">
+  <div class="max-w-xs mx-auto">
+    <div class="flex justify-between items-center mb-8">
+      <h1 class="text-black text-xl font-bold">Message</h1>
+      <button aria-label="Menu" class="focus:outline-none">
+        <i class="fas fa-bars text-black text-xl"></i>
       </button>
-    </header>
+    </div>
 
-    <main class="main-content">
-      <img
-        alt="Black envelope icon representing message"
-        class="message-icon"
-        height="80"
-        src="https://storage.googleapis.com/a1aa/image/650db757-00b9-4537-6368-a09d9c7bd5dc.jpg"
-        width="100"
-      />
-      <p class="no-messages-text">No messages yet</p>
-      <p class="info-text">
-        Send your first message.
-        <br />
-        You’ll find your conversations all right here.
+    <div class="flex flex-col items-center justify-center text-center mt-16 mb-8">
+      <div class="mb-8">
+        <div class="w-32 h-24 bg-black rounded-lg flex items-center justify-center">
+          <i class="fas fa-envelope text-cyan-400 text-4xl"></i>
+        </div>
+      </div>
+
+      <h2 class="text-black text-lg font-bold mb-4">No messages yet</h2>
+
+      <p class="text-black text-sm leading-relaxed mb-8 px-4">
+        Send your first message.<br>
+        You'll find your conversations<br>
+        all right here.
       </p>
-      <button class="explore-button">Explore Gigs</button>
-    </main>
 
-    <nav class="bottom-nav">
-      <button class="nav-button">
-        <i class="fas fa-home"></i>
-        <span>1/5</span>
+      <button class="bg-cyan-300 border border-black rounded-md px-6 py-3 text-black text-sm font-bold hover:bg-cyan-200 transition-colors">
+        <a href="application.html"> Explore Gigs
+        </a>
       </button>
-      <button class="nav-button">
+    </div>
+
+    <nav class="fixed bottom-2 left-1/2 -translate-x-1/2 w-[280px] bg-white border border-black rounded-md flex justify-between items-center px-6 py-2 text-black text-sm">
+      <button aria-label="Home" class="focus:outline-none">
+        <a href="home.html"> <i class="fas fa-home"></i>
+    </a>
+      </button>
+      <button aria-label="Messages" class="focus:outline-none text-cyan-500">
         <i class="fas fa-envelope"></i>
-        <span></span>
       </button>
-      <button class="nav-button">
+      <button aria-label="Search" class="focus:outline-none">
         <i class="fas fa-search"></i>
-        <span></span>
       </button>
-      <button class="nav-button">
+      <button aria-label="Notifications" class="focus:outline-none">
         <i class="fas fa-bell"></i>
-        <span></span>
       </button>
-      <button class="nav-button">
-        <i class="fas fa-user-circle"></i>
-        <span></span>
+      <button aria-label="Profile" class="focus:outline-none">
+        <i class="fas fa-user"></i>
       </button>
     </nav>
   </div>

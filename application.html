@@ -4,99 +4,132 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>Employee Application</title>
-
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- FontAwesome CDN -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-
-  <!-- Custom Stylesheet -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="styles.css" />
-
-  <!-- Optional JavaScript Redirect -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const form = document.querySelector("form");
-      const submitBtn = document.querySelector(".btn-submit");
-
-      submitBtn.addEventListener("click", function (e) {
-        e.preventDefault(); // Prevent default form submission
-        window.location.href = "cambal.html"; // Redirect
-      });
-    });
-  </script>
 </head>
-<body class="min-h-screen flex flex-col justify-between bg-gradient-to-br from-cyan-400 to-blue-400 font-inter">
-  <div class="flex flex-col items-center pt-8 px-6">
-    <img
-      alt="Grindfest logo"
-      class="w-20 h-20"
-      height="80"
-      src="https://storage.googleapis.com/a1aa/image/584af687-1d5a-4c07-647a-583fe2bb7a37.jpg"
-      width="80"
-    />
-    <h1 class="font-bold text-black mt-3 text-base">Employee Application</h1>
+<body class="bg-gradient-to-br from-cyan-400 to-blue-400 min-h-screen p-4 font-sans text-black">
+  <div class="max-w-xs mx-auto">
+    <div class="flex flex-col items-center mb-8">
+      <img
+        alt="Grindfest logo with a yellow bird wearing a blue glove in a white circle with black text around"
+        class="w-20 h-20 mb-4"
+        height="80"
+        src="images/logo.jpeg"
+        width="80"
+      />
+      <h1 class="font-bold text-black text-lg">Employee Application</h1>
+    </div>
 
-    <!-- ✅ Updated form with action and method -->
-    <form action="message.html" method="get" class="w-full max-w-xs mt-6 text-black text-sm">
-      <div class="flex justify-between mb-3">
-        <label class="self-center" for="firstName">First Name</label>
-        <label class="self-center" for="lastName">Last Name</label>
-      </div>
-      <div class="flex justify-between mb-4">
-        <input class="form-input w-[45%]" id="firstName" name="firstName" type="text" />
-        <input class="form-input w-[45%]" id="lastName" name="lastName" type="text" />
+    <form class="w-full text-black text-sm space-y-4">
+      <div class="flex justify-between items-end space-x-4">
+        <div class="flex-1">
+          <label class="block text-black text-sm mb-1" for="firstName">First Name</label>
+          <input 
+            class="w-full h-8 px-2 border border-black rounded-sm bg-white text-black text-sm" 
+            id="firstName" 
+            name="firstName" 
+            type="text" 
+          />
+        </div>
+        <div class="flex-1">
+          <label class="block text-black text-sm mb-1" for="lastName">Last Name</label>
+          <input 
+            class="w-full h-8 px-2 border border-black rounded-sm bg-white text-black text-sm" 
+            id="lastName" 
+            name="lastName" 
+            type="text" 
+          />
+        </div>
       </div>
 
-      <div class="mb-3 flex items-center">
-        <label class="w-20" for="fullName">Full name</label>
-        <input class="form-input flex-1" id="fullName" name="fullName" type="text" />
-      </div>
-
-      <div class="mb-3 flex items-center">
-        <label class="w-20" for="email">E-mail</label>
-        <input
-          class="form-input flex-1"
-          id="email"
-          name="email"
-          type="email"
-          placeholder="ex yecksi123@gmail.com"
+      <div class="flex items-center space-x-3">
+        <label class="text-black text-sm w-16" for="fullName">Full name</label>
+        <input 
+          class="flex-1 h-8 px-2 border border-black rounded-sm bg-white text-black text-sm" 
+          id="fullName" 
+          name="fullName" 
+          type="text" 
         />
       </div>
 
-      <div class="mb-3 flex items-center">
-        <label class="w-20" for="phone">Phone Num.</label>
-        <input class="form-input flex-1" id="phone" name="phone" type="tel" />
+      <div class="flex items-center space-x-3">
+        <label class="text-black text-sm w-16" for="email">E-mail</label>
+        <input 
+          class="flex-1 h-8 px-2 border border-black rounded-sm bg-white text-black text-sm" 
+          id="email" 
+          name="email" 
+          type="email" 
+          placeholder="Ex yecksi123@gmail.com"
+        />
       </div>
 
-      <div class="mb-6 flex items-center">
-        <label class="w-20" for="address">Address</label>
-        <input class="form-input flex-1" id="address" name="address" type="text" />
+      <div class="flex items-center space-x-3">
+        <label class="text-black text-sm w-16" for="phone">Phone Num.</label>
+        <input 
+          class="flex-1 h-8 px-2 border border-black rounded-sm bg-white text-black text-sm" 
+          id="phone" 
+          name="phone" 
+          type="tel" 
+        />
       </div>
 
-      <div class="flex items-center space-x-3 mb-6">
+      <div class="flex items-center space-x-3">
+        <label class="text-black text-sm w-16" for="address">Address</label>
+        <input 
+          class="flex-1 h-8 px-2 border border-black rounded-sm bg-white text-black text-sm" 
+          id="address" 
+          name="address" 
+          type="text" 
+        />
+      </div>
+
+      <div class="flex items-center space-x-3 mt-8">
         <i class="fas fa-upload text-black text-xl"></i>
-        <button class="btn-upload text-sm font-semibold text-blue-900 underline" type="button">Upload Resume</button>
+        <button 
+          class="bg-cyan-300 border border-black rounded-md px-4 py-2 text-black text-sm font-semibold hover:bg-cyan-200 transition-colors" 
+          type="button"
+        >
+          Upload Resume
+        </button>
       </div>
 
-      <!-- ✅ Submit button -->
-      <button class="btn-submit w-full bg-black text-white font-bold py-2 rounded hover:bg-gray-800 transition" type="submit">
-        Submit
-      </button>
+      <div class="flex justify-center mt-12">
+        <button 
+          class="bg-cyan-300 border border-black rounded-md px-8 py-3 text-black text-sm font-bold hover:bg-cyan-200 transition-colors" 
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
     </form>
-  </div>
 
-  <!-- Bottom Navigation -->
-  <nav class="flex justify-around bg-white py-3 mt-6">
-    <button aria-label="Home" class="focus:outline-none"><i class="fas fa-home text-xl"></i></button>
-    <button aria-label="Mail" class="focus:outline-none"><i class="fas fa-envelope text-xl"></i></button>
-    <button aria-label="Search" class="focus:outline-none"><i class="fas fa-search text-xl"></i></button>
-    <button aria-label="Notifications" class="focus:outline-none"><i class="fas fa-bell text-xl"></i></button>
-    <button aria-label="Profile" class="focus:outline-none"><i class="fas fa-user-circle text-xl"></i></button>
-  </nav>
+    <nav class="fixed bottom-2 left-1/2 -translate-x-1/2 w-[280px] bg-white border border-black rounded-md flex justify-between items-center px-6 py-2 text-black text-sm">
+      <button aria-label="Home" class="focus:outline-none">
+    <a href="home.html"> <i class="fas fa-home"></i>
+    </a>      
+    </button>
+      <button aria-label="Messages" class="focus:outline-none">
+        <a href="message.html"> <i class="fas fa-envelope"></i>
+        </a>
+      </button>
+      <button aria-label="Search" class="focus:outline-none">
+        <i class="fas fa-search"></i>
+      </button>
+      <button aria-label="Notifications" class="focus:outline-none">
+        <i class="fas fa-bell"></i>
+      </button>
+      <button aria-label="Profile" class="focus:outline-none">
+        <i class="fas fa-user"></i>
+      </button>
+    </nav>
+  </div>
 </body>
 </html>
